@@ -1,0 +1,20 @@
+{
+    "archiving_scripts": {
+        "consolidation": {
+            "filepath": "archive",
+            "args": ["--archive", "archive", "--archive", "archive2"],
+            "env": {"ARCHIVE": "archive"}
+        },
+        "asset_check": {
+            "filepath": "archive",
+            "args": ["--archive", "archive", "--archive", "archive2"],
+            "env": {"ARCHIVE": "archive"}
+        },
+        "email_report": {
+            "filepath": "archive",
+            "args": ["--archive", "archive", "--archive", "archive2"],
+            "env": {"ARCHIVE": "archive"}
+        },
+
+}
+}
