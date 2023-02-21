@@ -1,20 +1,34 @@
 {
-    "archiving_scripts": {
-        "consolidation": {
-            "filepath": "archive",
-            "args": ["--archive", "archive", "--archive", "archive2"],
-            "env": {"ARCHIVE": "archive"}
+    "Social Media Platforms": {
+        "youtube_validation": {
+            "filepath": "media_analysis.sh",
+            "args": [
+                "--yt",
+                "shorts"
+            ],
+            "env": {
+                "ARCHIVE": "archive"
+            }
         },
-        "asset_check": {
-            "filepath": "archive",
-            "args": ["--archive", "archive", "--archive", "archive2"],
-            "env": {"ARCHIVE": "archive"}
+        "instagram_validation": {
+            "filepath": "media_analysis.sh",
+            "args": [
+                "--ig",
+                "reels",
+            ],
+            "env": {
+                "ARCHIVE": "archive"
+            }
         },
-        "email_report": {
-            "filepath": "archive",
-            "args": ["--archive", "archive", "--archive", "archive2"],
-            "env": {"ARCHIVE": "archive"}
-        },
-
-}
+        "tiktok_validation": {
+            "filepath": "email-report.sh",
+            "args": [
+                "--tk",
+                "videos",
+            ],
+            "env": {
+                "ARCHIVE": "archive"
+            }
+        }
+    }
 }
